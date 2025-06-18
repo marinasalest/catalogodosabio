@@ -17,34 +17,7 @@ A persistência é feita em um banco **PostgreSQL** rodando em container Docker,
 
 ### Diagrama de Arquitetura
 
-```mermaid
-flowchart TD
-    subgraph API
-        A[Controller]
-        B[Service]
-        C[DTO/Mapper]
-    end
-    subgraph Persistência
-        D[Repository]
-        E[(PostgreSQL)]
-    end
-    subgraph Infra
-        F[Docker Compose]
-    end
-
-    A --> B
-    B --> C
-    B --> D
-    D --> E
-    F --> E
-```
-
-### Como visualizar ou importar os diagramas
-
-- **No GitHub**: Os diagramas Mermaid são renderizados automaticamente na visualização do README.
-- **No draw.io**: Acesse [draw.io](https://app.diagrams.net/), clique em "Arquivo > Importar do > Texto Mermaid..." e cole o bloco de código Mermaid do README. O diagrama será convertido automaticamente para edição.
-
----
+![Diagrama da Arquitetura](./imagem/arquitetura_solucao.png)
 
 ## Modelagem de Dados
 
