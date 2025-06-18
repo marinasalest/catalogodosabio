@@ -1,0 +1,45 @@
+# Compilação Java
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Configuração do Maven
+/logs/
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.log
+*.swp
+
+# Docker/PostgreSQL
+postgres-data/
+*.pid
+*.sock
+
+# Arquivos de ambiente
+.env
+
+# Testes e relatórios
+/test-output/
+/hs_err_pid*
+
+# Outros
+bin/ 
